@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content:center;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    min-height:100vh;
+    background-image:url('VAULTOFCODES_1708601039704.PNG');
+    background-size: cover;
+    background-position:center;
+}
+header {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 99;
+    
+}
+ .vaultofcodes{
+    font-size: 2em;
+    color:#fff;
+    user-select:none;
+ }
+
+ .navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:40px;
+}
+ 
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    width: 100px;
+    height:3px;
+    background:#fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+ 
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+    
+}
+
+.navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border:2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight:500;
+    margin-left: 40px;
+    transition: .5s;
+
+}
+
+.navigation .btnlogin-popup:hover {
+    background: #fff;
+    color: #041c0f3d;
+}
+
+i{
+    color:rgb(6, 3, 3);
+}
+.form-box {
+    width: 90%;
+    max-width: 350px;
+    background-color: transparent;
+    background-color:rgba(116, 113, 156, 0.851);
+    padding: 55px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -2px 2px 15px rgba(0,0,0,0.5);
+    
+}
+
+.register-container {
+    width:500;
+    display:flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+
+}
+.top span {
+   color:#fff;
+   font-size:small;
+   padding:10px 0;
+   display: flex;
+   justify-content:center;
+}
+.top span a{
+    font-weight: 500;
+    color:#fff;
+    margin-left: 5px;
+
+}
+
+header{
+    color:#fff;
+    font-size: 30px;
+    text-align:center;
+    padding:10px 0 30px 0;
+
+}
+.two-forms{
+    display: flex;
+    gap:10px;
+}
+nput-field{
+    font-size: 15px;
+    background: rgba(255,255,255,0.2);
+    color:#fff;
+    height:50px;
+    width:100%;
+    padding:0 10px,450x;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
